@@ -1,0 +1,45 @@
+<% include header %>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="/edit/<%= tiendas._id%>" method="post">
+                        <div id="hiddenInputs"></div>
+                        <div class="form-group">
+                            <h2>Ingresá los datos</h2>
+                            <!-- Nombre -->
+                            <input class="form-control" name="nombre" type="text"
+                            value="<%= tiendas.nombre%>" placeholder="Nombre del la tienda">
+                            <!-- Webs -->
+                            <div id="inputWebBox">
+                                <div class="input-group">
+                                    <input id="webInput" name="webs" type="text" class="form-control" value="<%= tiendas.webs %>" placeholder="Sitios web de la tienda"
+                                        aria-label="" aria-describedby="basic-addon1">
+                                    <div class="input-group-append">
+                                        <a href="#!" id="addWeb" class="btn btn-success">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tags -->
+                            <div class="input-group">
+                                <input id="tagInput" name="tags" type="text" class="form-control" value="<%= tiendas.tags %>" placeholder="Tags" aria-label=""
+                                    aria-describedby="basic-addon1">
+                                <div class="input-group-append">
+                                    <a href="#!" id="addTag" class="btn btn-success">+</a>
+                                </div>
+                            </div>
+                            <!-- Reputacion -->
+                            <select class="form-control" name="reputacion" id="reputacion">
+                                <option value="Baja">Baja</option>
+                                <option value="Media">Media</option>
+                                <option value="Alta">Alta</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script src="../script/app.js"></script>
+    </body>
+<html>

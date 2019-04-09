@@ -1,0 +1,123 @@
+body{
+	background-image: url("../img/fondo.jpg");
+	background-position: center center;
+	background-attachment: fixed !important;
+	background-repeat:no-repeat !important;
+	background-size: cover;
+	overflow: hidden !important;
+	background-color: #1C1C1C !important;
+	transition: 0.5s;
+}
+.overlay{
+	height: 100vh !important;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	z-index: 0;
+	opacity: .4;
+}
+/*--- TITULO --- */
+.own-title{
+	color: #f7f7f7 !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700 !important;
+	overflow: hidden !important;
+	font-size: 500% !important;
+	z-index: 100 !important;
+}
+.sub-title-first{
+	color:#f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	z-index: 100 !important;
+
+}
+.green-name{
+	color: #ABEBC6;
+}
+.own-row{
+	margin-top: 40vh;
+	
+}
+.own-button{
+	margin:25px 20px 20px 20px;
+	width: 150px; 
+	font-size: 150px;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 2 !important;
+
+}
+.own-button:hover{
+	transform: scale(1.2,1.2);
+	opacity: 0.8;
+}
+
+@media(max-width: 1200px){
+	.own-title{
+		font-size: 500% !important; 
+	}
+}
+@media(max-width: 992px){
+	.own-title{
+		font-size: 400% !important;
+	}
+	.sub-title-first{
+		font-size: 1.5rem;
+	}
+}
+@media(max-width: 768px){
+	.own-title{
+		font-size: 350% !important; 
+	}
+	.sub-title-first{
+		font-size: 1.2rem;
+	}
+	.logo-container{
+		display: flex;
+		justify-content: center;
+	}
+	#logo{
+		margin-left: 0 !important;
+	}
+	#logo-rombo{
+		margin-left: 6px !important;
+	}
+	body{
+		background-image: url("../img/fondo-mobile.jpg");
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+@media(max-width: 576px){
+	.own-row{
+		margin-top: 30vh;
+	}
+	.own-title{
+		font-size: 250% !important;
+	}
+	.sub-title-first{
+		font-size: 0.8rem;
+	}
+	.logo-container{
+		display: flex;
+		justify-content: center;
+	}
+	#logo{
+		margin-left: 0 !important;
+	}
+	#logo-rombo{
+		margin-left: 6px !important;
+	}
+	body{
+		background-image: url("../img/fondo-mobile.jpg");
+		height: 100vh;
+	}
+	.own-button{
+		width: 9rem;
+		height: 2.5rem;
+	}
+}
+
+

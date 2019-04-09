@@ -1,0 +1,375 @@
+*{text-decoration: none; list-style: none;}
+/*--- MAIN ----*/
+body{
+	background-color:#CCD1D1 !important; 
+	font-family: "Montserrat", serif !important;
+}
+body::-webkit-scrollbar{
+	width: 10px !important;
+}
+body::-webkit-scrollbar-thumb{
+	background-color:#34495E;
+	border-radius: 10px;
+}
+footer{
+	position:relative;
+	bottom: 0;
+	width: 100%;
+	background-color: #1C1C1C;
+	height: 10rem;
+}
+.own-col-photo{
+	padding: 12rem 00rem 0rem 0rem !important;
+}
+.bg-img{
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.photo-profile-container{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 18rem;
+}
+.photo-profile{
+	border-radius: 100%;
+	width: 30rem;
+	height: 30rem;
+	z-index: 100;
+	margin-bottom: 8rem !important;
+}
+.blue-bar{
+	position: absolute;
+	top: 23rem;
+	z-index: 50;
+    width: 90% !important;
+    height: 0px;
+    border-right: 35px solid transparent;
+    border-bottom: 65px solid #34495E;
+   	border-top: 65px solid #34495E;
+   	display: flex;
+	justify-content: flex-end;
+}
+.blue-bar-container{
+	position: relative;
+	top:-2.5rem;
+	min-width: 60%;
+	margin-right: 10%;
+}
+.rombo-cover{
+	width: 30rem; 
+    height: 30rem;
+    opacity: .7;
+    border: 1px solid #f7f7f7; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 10;
+    position: absolute;
+}
+.title-container-xl{
+	display: none;
+}
+.title{
+	font-weight: 700 !important;
+	margin-bottom: 0px !important;
+}
+.subtitle{
+	color: #f7f7f7 !important;
+	margin-left: 2rem;
+	font-weight:300; 
+}
+.white{
+	color:#f7f7f7;
+}
+.title-xl{
+	font-size: 5rem;
+}
+.subtitle-xl{
+	font-size: 2.5rem;
+}
+/*--- END MAIN ---*/
+/*--- ABOUT ME---*/
+p{
+	font-size: 1.5rem;
+}
+.own-container-items{
+	font-size: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	color: #34495E;
+
+}
+.own-icon-dev{
+	margin-left: 1rem;
+}
+.own-icon-dev:hover{
+	opacity: .8;
+}
+.list-group{
+	box-shadow: 0px 0px 19px -2px grey;
+}
+.list-group-item.active{
+	background-color:#34495E !important;
+	border-color: #34495E !important; 
+	color: #f7f7f7 !important;
+} 
+.list-group-item{
+	background-color: #f7f7f7 !important;
+}
+.wrapper{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.last-sect{
+	color:#f7f7f7;
+	background-color: #1C1C1C;
+}
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+}
+#fullpage section { height: 100vh; }
+.list-group-item{
+	
+}
+/*--- END ABOUT ME  ---*/
+/*--- MEDIA QUERIES ---*/
+@media(max-width: 1500px){
+	.blue-bar-container{
+		min-width: 80%;
+	}
+}
+@media(max-width: 1200px){
+	.blue-bar{
+		display: none;
+	}
+	.title-container-xl{
+		display: block;
+	}
+	.photo-profile{
+		width: 13rem;
+		height: 13rem;
+		margin:auto;
+	}
+	.rombo-cover{
+		width: 13rem;
+		height: 13rem;
+		
+	}
+	.photo-profile-container{
+		margin-right:0rem !important ;
+		padding-top: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+}
+@media(max-width: 992px){
+	.photo-profile{
+		width: 10rem;
+		height: 10rem;
+		margin:auto;
+	}
+	.rombo-cover{
+		width: 10rem;
+		height: 10rem;
+		
+	}
+	.photo-profile-container{
+		margin-right:0rem !important ;
+		padding-top: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+	.own-col-photo{
+		padding-top:7rem !important; 
+	}
+	.blue-bar{
+		display: none;
+	}
+	.d-res{
+		display:block !important;
+	}
+	.blue-bar{
+		display: none;
+	}
+	.title-container-xl{
+		margin-top:2rem;
+	}
+	.title-xl{
+		font-size: 1.5rem;
+	}
+	.subtitle-xl{
+		font-size: 1rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+	.responsive-fix{
+		margin-top:2rem;
+	}
+	.own-container-items{
+		font-size: 1.5rem !important; 
+		margin:1rem 1rem 1rem 1rem;
+	}
+	.d-res{
+		display: none !important;
+	}
+	.resize{
+		font-size: 1rem !important;
+	}
+}
+@media(max-width: 768px){
+	.photo-profile{
+		width: 10rem;
+		height: 10rem;
+		margin-bottom: 4rem !important;
+	}
+	.rombo-cover{
+		width: 10rem;
+		height: 10rem;	
+	}
+	.photo-profile-container{
+		margin-right:0px;
+		padding-top: 1.5rem;
+		display: flex;
+		justify-content: center;
+
+	}
+	.own-col-photo{
+		padding-top:7rem !important; 
+	}
+	.blue-bar{
+		display: none;
+	}
+	.title-container-xl{
+		margin-top:4rem;
+	}
+	.title-xl{
+			font-size: 1.5rem;
+	}
+	.subtitle-xl{
+			font-size: 1rem;
+	}
+	p{
+			font-size: 0.8rem;
+	}
+	.responsive-fix{
+		margin-top:2rem;
+	}
+	.own-container-items{
+		font-size: 1.5rem !important; 
+		margin:1rem 1rem 1rem 1rem;
+	}
+	.d-res{
+		display: none !important;
+	}
+	.resize{
+		font-size: 1rem !important;
+	}
+}
+@media(max-width: 576px){
+	.photo-profile{
+		width: 9rem;
+		height: 9rem;
+		margin-bottom: 4rem !important;
+	}
+	.rombo-cover{
+		width: 9rem;
+		height: 9rem;	
+	}
+	.photo-profile-container{
+		margin-right:0px;
+		padding-top: 0.5rem;
+		display: flex;
+		justify-content: center;
+
+	}
+	.own-col-photo{
+		padding-top:7rem !important; 
+	}
+	.blue-bar{
+		display: none;
+	}
+	.title-container-xl{
+		margin-top:4rem;
+	}
+	.title-xl{
+			font-size: 1.5rem;
+	}
+	.subtitle-xl{
+			font-size: 1rem;
+	}
+	p{
+			font-size: 0.8rem;
+	}
+	.responsive-fix{
+		margin-top:2rem;
+	}
+	.own-container-items{
+		font-size: 1.5rem !important; 
+		margin:1rem 1rem 1rem 1rem;
+	}
+	.d-res{
+		display: none !important;
+	}
+	.resize{
+		font-size: 1rem !important;
+	}
+}
+@media(max-width: 450px){
+	.photo-profile{
+		width: 12rem;
+		height: 12rem;
+		margin-bottom: 4rem !important;
+	}
+	.rombo-cover{
+		width: 12rem;
+		height: 12rem;
+		
+	}
+	.photo-profile-container{
+		margin-right:0px ;
+		padding-top: 2rem;
+		display: flex;
+		justify-content: center;
+
+	}
+	.own-col-photo{
+		padding-top:7rem !important; 
+	}
+	.blue-bar{
+		display: none;
+	}
+	.title-container-xl{
+		margin-top:0rem;
+	}
+	.title-xl{
+			font-size: 2rem;
+	}
+	.subtitle-xl{
+			font-size: 1rem;
+	}
+	p{
+			font-size: 0.8rem;
+	}
+	.responsive-fix{
+		margin-top:2rem;
+	}
+	.own-container-items{
+		font-size: 1.5rem;
+		margin:1rem 5rem 1rem 5rem;
+	}
+	.d-res{
+		display:block !important;
+	}
+}

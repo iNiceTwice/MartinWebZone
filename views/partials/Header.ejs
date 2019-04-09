@@ -1,0 +1,82 @@
+
+<body>
+<% if(main){ %>
+    <header>
+        <div id="top-bar">
+            <div class="logo-container">
+                <a id="logo" href="/">M. &nbsp;Planiscig</a><span id="logo-rombo"></span>
+            </div>
+        </div>
+    </header>
+<% }else { %>
+        <header>
+            <div id="top-bar" class="navbar-light">
+                <div class="row own-row-fixed">
+                    <div class="col-sm-12 own-burger-container">
+                        <button class="own-burger-btn navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#opciones">
+                        <i class="fas fa-bars own-icon"></i>
+                        </button>
+                        <div class="own-menu-container collapse navbar-collapse" id="opciones">
+                            <ul class="navbar-nav">
+                            <% if(link == "Contacto"){ %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/"><i
+                                    class="fas fa-home own-icon-list"></i>&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/portfolio"><i
+                                    class="far fa-folder own-icon-list"></i>&nbsp;&nbsp;Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact"><i
+                                    class="far fa-envelope own-icon-list"></i>&nbsp;&nbsp;Contacto </a>
+                                </li>
+                            <% }else if(link == "Sobre mi"){ %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/"><i class="fas fa-home own-icon-list"></i>&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/portfolio"><i class="far fa-folder own-icon-list"></i>&nbsp;&nbsp;Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about"><i class="far fa-envelope own-icon-list"></i>&nbsp;&nbsp;Sobre mí</a>
+                                </li>
+                            <% }else{ %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/"><i class="fas fa-home own-icon-list"></i>&nbsp;&nbsp;Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about"><i class="far fa-folder own-icon-list"></i>&nbsp;&nbsp;Sobre mí</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact"><i class="far fa-envelope own-icon-list"></i>&nbsp;&nbsp;Contacto </a>
+                                </li>
+                            <% } %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-container">
+                    <a id="logo" href="/">M. &nbsp;Planiscig</a><span
+                    id="logo-rombo"></span>
+                </div>
+                <nav class="nav-container-link-lg">
+                    <% if(link == "Contacto"){ %>
+                        <a class="nav-link-lg" href="/">Home</a>
+                        <a class="nav-link-lg" href="/portfolio">Portfolio</a>
+                        <a class="nav-link-lg" href="/contact">Contacto</a>
+                    <% }else if(link == "Sobre mi"){ %>
+                        <a class="nav-link-lg" href="/">Home</a>
+                        <a class="nav-link-lg" href="/portfolio">Portfolio</a>
+                        <a class="nav-link-lg" href="/about">Sobre mí</a>
+                    <% }else{ %>
+                        <a class="nav-link-lg" href="/">Home</a>
+                        <a class="nav-link-lg" href="/about">Sobre mí</a>
+                        <a class="nav-link-lg" href="/contact">Contacto</a>
+                    <% } %>
+                </nav>
+            </div>
+        </header>
+<% } %>
+    

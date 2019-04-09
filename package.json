@@ -1,0 +1,20 @@
+{
+  "name": "ultimate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.22"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

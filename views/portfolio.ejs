@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="es-ar">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+	<base href="/">
+	<% include partials/Head %>
+	<link rel="stylesheet" href="css/styles-portfolio.css">
+	<title>Portfolio</title>
+</head>
+<body>
+<!--HEADER-->
+<% include partials/Header %>
+<div class="container">
+	<div class="row own-row">
+		<div class="col-12">
+			<div class="title-container">
+				<h1><em>Portfolio</em></h1>
+				<div class="rounded-top" id="trapezoid"></div>
+				<div class="portfolio"></div>
+					<br>
+					<% for(let i=0;i< projects.length;i++ ){ %>
+					<a target="_blank" href="<%= projects[i].link%>">
+						<span class="link-data">
+							<h1><%= projects[i].title%></h1>
+							<p>
+								<%= projects[i].description%>
+								<br><br><b>Recursos utilizados:</b>
+								<%= projects[i].resources %>    
+							</p>
+							<img src="<%= projects[i].imgUrl %>" alt="Sitio web de eventos">
+						</span>
+					</a>
+					<br><br>
+					<% } %>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-success text-center" role="alert">
+    	<strong>No es el final!</strong> Mas proyectos proximamente.
+	</div>
+</div>
+<footer></footer>
+<!--SCRIPTS & BOOTSTRAP-->
+<% include partials/Footer %>
+</body>
+</html>

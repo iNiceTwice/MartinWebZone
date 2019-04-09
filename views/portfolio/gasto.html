@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es-ar">
+  <head>
+    <title>Gasto Mensual</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="GastoMensual/styles.css">
+    <link rel="icon" href="../../img/logo.ico">
+  </head>
+  <body>
+      <!-- MODAL-->
+    <button id="btnModal" type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#exampleModalCenter">
+    </button>
+    <div class="modal fade" id="exampleModalCenter"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center d-block">
+                    <h5 class="modal-title nunito" id="exampleModalLongTitle">Inserte su sueldo <span class="text-success">$</span></h5>
+                </div>
+                <div class="modal-body">
+                    <input autofocus placeholder="Inserte aquí" id="presupuesto" type="number" class="form-control lg form-control-sm">
+                </div>
+                <div class="modal-footer">
+                    <button id="modalClose" type="button" class="btn btn-primary" data-dismiss="modal">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a target="_blank" class="social-link" href="https://github.com/iNiceTwice/Ultimate/tree/gh-pages/portfolio/GastoMensual"><i class="fab fa-github-square fa-3x"></i></a>
+    <div class="main-container container-fluid flex-wrapper">
+        <div class="row flex-wrapper">
+            <h1 class="nunito main-color text-center">Gasto Mensual</h1>
+            <div class="col-12 flex-wrapper">
+                <div class="main-bg-color main-box shadow mt-2 rounded">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center">
+                            <h4 class="nunito mt-4">Añade tus gastos aquí</h2>
+                            <form action="">
+                                <h5 class="nunito mt-4"><b>Gasto</b></h5>
+                                <input id="gasto" class="ml-4 form-control form-control-sm" type="text" placeholder="Nombre del Gasto">
+                                <h5 class="nunito mt-4"><b>Cantidad</b></h5>
+                                <input id="cantidad" class="ml-4 form-control form-control-sm" type="number" placeholder="Cantidad en $">
+                                <a id="btn" href="#" class="btn btn-danger ml-4 mt-3 mb-3">Agregar</a>
+                                <a href="#" id="borrarTodo" class="btn btn-primary ml-4 mt-3 mb-3">Borrar Todo</a>
+                                <div id="gastoContainer"></div>
+                            </form>
+                        </div>
+                        <!-- Listado -->
+                        <div class="col-12 col-md-6 listado text-center">
+                            <h4 class="nunito mt-4">Listado</h2>
+                            <div id="presupuestoBox" class="mt-4 m-4 alert alert-primary" role="alert">
+                                <strong>Presupuesto: $</strong>
+                            </div>                                
+                            <div id="restoBox" class="m-4 alert alert-success" role="alert">
+                                <strong>Restante: $</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="listado-productos">
+                            <table class="table table-sm main-color">
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="GastoMensual/script.js"></script>
+  </body>
+</html>
