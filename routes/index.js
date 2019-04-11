@@ -57,9 +57,9 @@ const Tiendas = require("../models/wardrobe.js")
 
     // -------- End Portfolio ------- 
 
-/*
-   // ******** ONLY FOR DEV USE **********
 
+   // ******** ONLY FOR DEV USE **********
+/*
     router.post("/portfolio/add", async(req,res)=>{
         console.log(req.body)
         const projects = new Portfolio(req.body)
